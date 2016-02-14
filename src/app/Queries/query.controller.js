@@ -5,10 +5,10 @@
         .module('app.queries')
         .controller('QueryController', QueryController);
 
-    QueryController.$inject = ['queriesDataService','$stateParams'];
+    QueryController.$inject = ['queryPrepService'];
 
     /* @ngInject */
-    function QueryController(queriesDataService,$stateParams) {
+    function QueryController(queryPrepService) {
         var vm = this;
 
         activate();
@@ -18,13 +18,7 @@
         }
 
         function getQuery(){
-          queriesDataService
-            .getQuery($stateParams.id)
-              .then(handleQueryPromise);
-        }
-
-        function handleQueryPromise(data){
-          vm.query = data;
+          vm.query = queryPrepService;
         }
 
     }

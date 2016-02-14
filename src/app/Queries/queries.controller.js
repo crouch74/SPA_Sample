@@ -5,10 +5,10 @@
         .module('app.queries')
         .controller('QueriesController', QueriesController);
 
-    QueriesController.$inject = ['queriesDataService'];
+    QueriesController.$inject = ['queriesPrepService'];
 
     /* @ngInject */
-    function QueriesController(queriesDataService) {
+    function QueriesController(queriesPrepService) {
         var vm = this;
         vm.queries = [];
 
@@ -19,13 +19,7 @@
         }
 
         function getQueries(){
-          return queriesDataService
-            .getAll()
-              .then(handleGetQueries);
-        }
-
-        function handleGetQueries(data){
-          vm.queries = data;
+          vm.queries = queriesPrepService;
         }
     }
 })();
