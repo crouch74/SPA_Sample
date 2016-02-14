@@ -1,2 +1,7 @@
-<h1>{{ctrl.query.name}} - {{ctrl.query.keywordsCount}} keywords</h1>
+<h1 translate="HAS_KEYWORDS"
+translate-values="{queryName: ctrl.query.name,keywordsCount: ctrl.query.keywordsCount}"
+  translate-interpolation="messageformat"></h1>
 {{ctrl.query.createdAt | date}}
+
+<button ng-click="ctrl.changeLanguage('ar')" class="button">Arabic</button>
+<button ng-click="ctrl.changeLanguage('en')" class="button">English</button>

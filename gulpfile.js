@@ -13,7 +13,12 @@ var paths = {
   libs:[
     'bower_components/angular/angular.min.js',
     'bower_components/angular-bootstrap/ui-bootstrap.min.js',
-    'bower_components/angular-ui-router/release/angular-ui-router.min.js'
+    'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+    'bower_components/angular-translate/angular-translate.min.js',
+    'bower_components/messageformat/messageformat.js',
+    'bower_components/messageformat/locale/en.js',
+    'bower_components/messageformat/locale/ar.js',
+    'bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js'
   ],
   app : [
     'src/app/app.module.js',

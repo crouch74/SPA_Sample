@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('app.queries', []);
+        .module('app.queries', ['app.core']);
 })();
