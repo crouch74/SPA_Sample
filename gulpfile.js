@@ -43,7 +43,6 @@ gulp.task('copy:templates',function(){
         base: './src/'
       })
     .pipe(ngHtml2js({
-      prefix: 'templates/',
       moduleName: 'app',
       declareModule: false
     }))

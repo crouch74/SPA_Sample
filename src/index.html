@@ -1,8 +1,22 @@
 <html>
-  <head>
-    <title>SPA sample app</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <title>SPA sample app</title>
+  <script src="./js/libs.min.js" charset="utf-8"></script>
+  <script src="./js/app.min.js" charset="utf-8"></script>
+  <script src="./js/app.template.min.js" charset="utf-8"></script>
+</head>
+
+<body ng-app="app">
+  <nav>
+    <a ui-sref="queries">Queries</a>
+    <a ui-sref="users">Users</a>
+    <a ui-sref="Reports">Reports</a>
+    <a ui-sref="Dashboards">Dashboards</a>
+  </nav>
+  <ui-view>
+
+  </ui-view>
+</body>
+
 </html>

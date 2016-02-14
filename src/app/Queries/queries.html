@@ -1,0 +1,5 @@
+<ul>
+  <li ng-repeat="query in ctrl.queries">
+    <span><a ui-sref="query({id:query.id})">{{query.name}}</a> - {{query.createdAt | date}}</span>
+  </li>
+</ul>
